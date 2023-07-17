@@ -7,11 +7,11 @@ In this app, the user enters the name of a city (either just the city name, or "
 Every time a user searches for a city, a button displaying that search information is created underneath the search field. When the user clicks on that button, a new search is executed for that location. Additionally, if the user closes the window or refreshes the browser, the search history buttons remain, and the app will open up with weather results for the last city the user searched for. Finally, clicking the "Clear History" button clears the user's local storage and removes the history buttons from the page.
 
 ## Website Screenshot
-![Website Screenshot](https://github.com/andrei-ribeiro-wenceslau/workday-scheduler/blob/main/assets/images/workday-scheduler-image.png "Website Screenshot")
+![Website Screenshot](https://github.com/andrei-ribeiro-wenceslau/weather-dashboard/blob/main/assets/images/weather-dashboard-screenshot.png "Website Screenshot")
 
 ## Solution URL
 
-[Weather Dashboard](https://andrei-ribeiro-wenceslau.github.io/workday-scheduler/)
+[Weather Dashboard](https://andrei-ribeiro-wenceslau.github.io/weather-dashboard/)
 
 ## Credits
 
