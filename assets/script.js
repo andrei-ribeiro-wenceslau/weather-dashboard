@@ -118,4 +118,43 @@ function find(c) {
         });
   }
   
- 
+  function addToList(c) {
+    const listEl = document.createElement("li");
+    listEl.innerHTML = c.toUpperCase();
+    listEl.classList.add("list-group-item");
+    listEl.setAttribute("data-value", c.toUpperCase());
+    document.querySelector(".list-group").appendChild(listEl);
+}
+  
+
+function invokePastSearch(event) {
+    const liEl = event.target;
+    if (event.target.matches("li")) {
+      city = liEl.textContent.trim();
+      currentWeather(city);
+    }
+}
+
+
+document.querySelector(".list-group").addEventListener("click", invokePastSearch);
+
+
+function clearHistory(event) {
+  event.preventDefault();
+  sCity = [];
+  localStorage.removeItem("cityname");
+  document.querySelector(".list-group").innerHTML = "";
+}
+
+
+clearButton.addEventListener("click", clearHistory);
+  
+
+window.addEventListener("load", function () {
+    sCity = JSON.parse(localStorage.getItem("cityname"));
+    if (sCity !== null) {
+      sCity.forEach(function (city) {
+        addToList(city);
+        })
+    }
+})
